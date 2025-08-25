@@ -1,4 +1,13 @@
-[
+[{
+  "name": "blog.reimu.net 數字分頁（嚴格相鄰）",
+  "url": "^https?://blog\\.reimu\\.net(/.*)?$",
+  "nextLink": "div.wp-pagenavi .sfwppa-current-page + a.sfwppa-pages.larger, div.wp-pagenavi .sfwppa-current-page + a.sfwppa-pages, div.wp-pagenavi .current + a.sfwppa-pages, div.wp-pagenavi a.nextpostslink, div.wp-pagenavi a[rel='next']",
+  "pageElement": "#primary > main.site-main",
+  "insertBefore": "div.wp-pagenavi, footer.site-footer, #colophon",
+  "exampleUrl": "https://blog.reimu.net/page/1",
+  "author": "custom",
+  "note": "只取『當前頁』後面鄰接的下一個頁碼 a（避免 10/20/30/尾頁）。若主題把當前頁做成 span.current，也已涵蓋 .current + a。"
+},
 {
     "name": "精易论坛 - 手机版 - Powered by Discuz!",
     "url": "^https?://bbs\\.125\\.la/",
